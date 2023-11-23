@@ -1,0 +1,73 @@
+
+
+                                             Streaming with NIFI,KAFKA & SPARK Integration
+                                             =============================================
+RDD Streaming
+-------------
+
+
+   Procedure
+   =========
+
+   Step 1: Start Nifi services and open Nifi UI
+   Step 2: Create suitable processors (eg: Getfile & Putkafka ) and configure
+           Getfile
+           =======
+           1.configure input path and schedule time and etc......
+
+           PutKafka
+           ========
+           1.configure Topic name
+           2.Scheduling time
+           3.host or known brokers
+   Step 3: Start Zookeeper services (QuorumPeerMain) , used to store meta data from kafka
+   Step 4: Start kafka (*** w/o zookeeper kafka will not run ***)
+   Step 5: check if all services are running or not by typing "jps" in terminal ,if not start all
+          eg:
+             2648 QuorumPeerMain
+             3050 Kafka
+             2555 RunNiFi
+             15724 Jps
+             2572 NiFi
+   Step 6: Create topic(channel) in kakfa  (in this project we are using nifi as producer and Spark as Consumer)
+   step 7: Kafka + spark integration (Refer:https://spark.apache.org/docs/latest/streaming-kafka-0-10-integration.html)
+
+           Totaly 9 steps are there
+           ========================
+           Step 1: Add connectivity JARS (add dependencies in build.sbt then build) for more understanding open build.sbt
+           Step 2: Add necessary Imports
+           Step 3: Initialize streaming context (val ssc= streamingContext)
+           Step 4: KafkaParams----localhost:9092 (val kafkapararams = localhost:9092)
+           Step 5: Topic Name (val topicname =Array("ilaya")
+           Step 6: kafkaUtils (Streaming context,kafka-pararams,TopicName)  (Key value)
+           Step 7: kafkaUtils---getting value from above step--stream data
+           Step 8: print Stream
+           Step 9: start Stream
+
+           eg:
+
+           import org.apache.kafka.clients.consumer.ConsumerRecord
+           import org.apache.kafka.common.serialization.StringDeserializer
+           import org.apache.spark.streaming.kafka010._
+           import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+           import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
+
+           val kafkaParams = Map[String, Object](
+             "bootstrap.servers" -> "localhost:9092,anotherhost:9092",
+             "key.deserializer" -> classOf[StringDeserializer],
+             "value.deserializer" -> classOf[StringDeserializer],
+             "group.id" -> "use_a_separate_group_id_for_each_stream",
+             "auto.offset.reset" -> "latest",
+             "enable.auto.commit" -> (false: java.lang.Boolean)
+           )
+
+           val topics = Array("topicA", "topicB")
+           val stream = KafkaUtils.createDirectStream[String, String](
+             streamingContext,
+             PreferConsistent,
+             Subscribe[String, String](topics, kafkaParams)
+           )
+
+           stream.map(record => (record.key, record.value))
+
+
