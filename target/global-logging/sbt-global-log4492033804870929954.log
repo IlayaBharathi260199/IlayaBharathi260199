@@ -141,3 +141,4 @@
 [0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
 [0m[[0m[0minfo[0m] [0m[0mset current project to ilaya (in build file:/home/ubuntu/IdeaProjects/ilaya/)[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 33967 seconds, 9.33 (0.0%) were spent in GC. [Heap: 0.29GB free of 0.38GB, max 1.33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
