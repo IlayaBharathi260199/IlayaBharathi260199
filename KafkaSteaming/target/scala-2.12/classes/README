@@ -34,7 +34,7 @@ RDD Streaming
 
            Totaly 9 steps are there
            ========================
-           Step 1: Add connectivity JARS (add dependencies in build.sbt then build) for more understanding watch build.sbt
+           Step 1: Add connectivity JARS (add dependencies in build.sbt then build) for more understanding open build.sbt
            Step 2: Add necessary Imports
            Step 3: Initialize streaming context (val ssc= streamingContext)
            Step 4: KafkaParams----localhost:9092 (val kafkapararams = localhost:9092)
