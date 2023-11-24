@@ -7,7 +7,9 @@ import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 import org.apache.spark.streaming.kafka010._
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.log4j.{Level, Logger}
 
+// Set the log level to DEBUG
 
 object StreamingtoDF {
 
@@ -15,12 +17,14 @@ object StreamingtoDF {
 
     val sparkConf = new SparkConf()
       .setAppName("Streaming")
-      .setMaster("local[*]")
+      .setMaster("local[2]")
       .set("spark.driver.allowMultipleContexts","true") // Allowing multiple contexts
 
     // Create a SparkContext using the SparkConf
     val sc = new SparkContext(sparkConf)
     sc.setLogLevel("Error")
+
+    Logger.getRootLogger.setLevel(Level.DEBUG)
 
     // Create a SparkSession
      val spark = SparkSession
@@ -30,7 +34,7 @@ object StreamingtoDF {
     // Set log level to avoid unnecessary logs
       spark.sparkContext.setLogLevel("ERROR")
 
-    val streamingContext = new StreamingContext(sparkConf, Seconds(8))
+    val streamingContext = new StreamingContext(sparkConf, Seconds(3))
 
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> "localhost:9092",
@@ -59,7 +63,14 @@ object StreamingtoDF {
          val df=x.toDF("id").withColumn("time",current_timestamp())
          df.show()
 
+         // Specify the output path for the Parquet files
+        // val outputPath = "/home/ubuntu/ilaya/"
+
+         // Write the DataFrame to Parquet files
+       //  df.write.mode("append").parquet(outputPath)
+
          // if any error occured means just crete new topic and try
+         //
          // try to increase the seconds , based on our resources it can cause error
 
 

@@ -71,3 +71,12 @@ RDD Streaming
            stream.map(record => (record.key, record.value))
 
 
+    Structured Streaming
+    ====================
+
+        when compare to rdd streaming , Structured is bit different
+
+        we need to Add one more dependency in build.sbt
+       "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.8"
+
+

@@ -117,6 +117,7 @@
     <orderEntry type="library" name="sbt: org.apache.spark:spark-network-common_2.12:2.4.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-network-shuffle_2.12:2.4.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-sketch_2.12:2.4.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-sql_2.12:2.4.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-streaming-kafka-0-10_2.12:2.4.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-streaming_2.12:2.4.8:jar" level="project" />
