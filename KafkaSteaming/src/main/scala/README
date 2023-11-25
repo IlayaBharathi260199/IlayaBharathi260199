@@ -79,4 +79,11 @@ RDD Streaming
         we need to Add one more dependency in build.sbt
        "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.8"
 
+        while writingggg structured streaming ,
+        whenever we make change write path, at same time make sure to change checkpoint path as well or else will throw error
+
+
+
+
+
 

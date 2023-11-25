@@ -8,7 +8,7 @@ import org.apache.spark.streaming.{StreamingContext, Seconds}
 import org.apache.spark.{SparkConf, SparkContext}
 
 
-object Streaming {
+object KafkaStreaming {
 
   def main(args: Array[String]): Unit = {
 
@@ -36,8 +36,8 @@ object Streaming {
       "bootstrap.servers" -> "localhost:9092",
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
-      "group.id" -> "firstgroup",
-      "auto.offset.reset" -> "earliest",
+      "group.id" -> "newgroup",
+      "auto.offset.reset" -> "latest",
       "enable.auto.commit" -> (false: java.lang.Boolean)
     )
 

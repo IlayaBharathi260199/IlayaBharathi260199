@@ -11,7 +11,7 @@ import org.apache.log4j.{Level, Logger}
 
 // Set the log level to DEBUG
 
-object StreamingtoDF {
+object KafkaStreamingtoDF {
 
   def main(args: Array[String]): Unit = {
 
@@ -37,7 +37,7 @@ object StreamingtoDF {
     val streamingContext = new StreamingContext(sparkConf, Seconds(3))
 
     val kafkaParams = Map[String, Object](
-      "bootstrap.servers" -> "localhost:9092",
+      "bootstrap.-" -> "localhost:9092",
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
       "group.id" -> "df2group",
@@ -45,7 +45,7 @@ object StreamingtoDF {
      // "enable.auto.commit" -> (false: java.lang.Boolean)
     )
 
-    val topics = Array("ilaya2")
+    val topics = Array("ilaya") // topic name
 
     val stream = KafkaUtils.createDirectStream[String, String](
       streamingContext,
@@ -62,17 +62,6 @@ object StreamingtoDF {
        {
          val df=x.toDF("id").withColumn("time",current_timestamp())
          df.show()
-
-         // Specify the output path for the Parquet files
-        // val outputPath = "/home/ubuntu/ilaya/"
-
-         // Write the DataFrame to Parquet files
-       //  df.write.mode("append").parquet(outputPath)
-
-         // if any error occured means just crete new topic and try
-         //
-         // try to increase the seconds , based on our resources it can cause error
-
 
        }
 
