@@ -15,20 +15,20 @@ object KafkaStreaming {
     val sparkConf = new SparkConf()
       .setAppName("Streaming")
       .setMaster("local[*]")
-      .set("spark.driver.allowMultipleContexts","true") // Allowing multiple contexts
+      .set("spark.driver.allowMultipleContexts", "true") // Allowing multiple contexts
 
     // Create a SparkContext using the SparkConf
     val sc = new SparkContext(sparkConf)
     sc.setLogLevel("Error")
 
     // Create a SparkSession
-     val spark = SparkSession
-       .builder()
+    val spark = SparkSession
+      .builder()
       .getOrCreate()
 
     import spark.implicits._
     // Set log level to avoid unnecessary logs
-      spark.sparkContext.setLogLevel("ERROR")
+    spark.sparkContext.setLogLevel("ERROR")
 
     val streamingContext = new StreamingContext(sparkConf, Seconds(1))
 
@@ -49,7 +49,7 @@ object KafkaStreaming {
       Subscribe[String, String](topics, kafkaParams)
     )
 
-    val streamValue=stream.map(record => record.value())
+    val streamValue = stream.map(record => record.value())
 
     streamValue.print()
 
