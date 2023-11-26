@@ -17,26 +17,41 @@ Procedure
 =========
 
 Step 1: Start Nifi services and open Nifi UI
+
 Step 2: Create suitable processors (eg: Getfile & Putkafka ) and configure
+
 Getfile
 =======
 1.configure input path and schedule time and etc......
 
-           PutKafka
-           ========
-           1.configure Topic name
-           2.Scheduling time
-           3.host or known brokers
+PutKafka
+========
+1.configure Topic name
+
+2.Scheduling time
+
+3.host or known brokers
+
 Step 3: Start Zookeeper services (QuorumPeerMain) , used to store meta data from kafka
+
 Step 4: Start kafka (*** w/o zookeeper kafka will not run ***)
+
 Step 5: check if all services are running or not by typing "jps" in terminal ,if not start all
+
 eg:
+
 2648 QuorumPeerMain
+
 3050 Kafka
+
 2555 RunNiFi
+
 15724 Jps
+
 2572 NiFi
+
 Step 6: Create topic(channel) in kakfa  (in this project we are using nifi as producer and Spark as Consumer)
+
 step 7: Kafka + spark integration (Refer:https://spark.apache.org/docs/latest/streaming-kafka-0-10-integration.html)
 
            Totaly 9 steps are there
