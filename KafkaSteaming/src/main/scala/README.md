@@ -109,6 +109,15 @@ Nifi with HDFS
 Goal: Want to read file from HDFS and write it in Different Hdfs path
 
 
+![GetHDFStoPutHDFS_Nifi](https://github.com/IlayaBharathi260199/IlayaBharathi260199/assets/151670523/63ba74b3-fb6c-4adf-b4ed-e657940fc901)
+
+![GetHDFS](https://github.com/IlayaBharathi260199/IlayaBharathi260199/assets/151670523/e56dc006-5069-4731-86c7-d1fc096614b6)
+
+
+![puthdfs](https://github.com/IlayaBharathi260199/IlayaBharathi260199/assets/151670523/e87a248a-0801-4919-9d2e-4fc705e6bc7a)
+
+
+
 
 
 
