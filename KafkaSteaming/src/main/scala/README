@@ -74,13 +74,28 @@ RDD Streaming
     Structured Streaming
     ====================
 
-        when compare to rdd streaming , Structured is bit different
+        When compare to rdd streaming , Structured is bit different
 
-        we need to Add one more dependency in build.sbt
+        Follow Step 1 to Step 6 from RDD Streaming
+
+        We need to Add one more dependency in build.sbt
        "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.8"
 
-        while writingggg structured streaming ,
-        whenever we make change write path, at same time make sure to change checkpoint path as well or else will throw error
+       Default Schema for structured from Kafka
+           kafkaStreamDF.printSchema()
+
+           Column	            Type
+           key	                binary
+           value	              binary
+           topic	              string
+           partition	          int
+           offset	            long
+           timestamp	          timestamp
+           timestampType	      int
+           headers (optional)	array
+
+        While writing structured streaming ,
+        Whenever we make change write path, at same time make sure to change checkpoint path as well or else will throw error
 
 
 

@@ -41,11 +41,11 @@ object KafkaStreamingtoDF {
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
       "group.id" -> "df2group",
-      "auto.offset.reset" -> "earliest"
-     // "enable.auto.commit" -> (false: java.lang.Boolean)
+      "auto.offset.reset" -> "earliest",
+      "enable.auto.commit" -> (false: java.lang.Boolean)
     )
 
-    val topics = Array("ilaya") // topic name
+    val topics = Array("ilaya")                                                   // topic name
 
     val stream = KafkaUtils.createDirectStream[String, String](
       streamingContext,
