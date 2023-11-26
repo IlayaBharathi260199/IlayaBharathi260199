@@ -123,11 +123,14 @@ Nifi with HDFS
 
 Goal: Want to read file from HDFS and write it in Different Hdfs path
 
-Adding 2 Processors
+Steps
 ===================
-1.GetHDFS
-2.PutHDFS
-3.Configure it with HDFS Read & Write Path
+1.GetHDFS(Processor)
+
+2.PutHDFS(Processor)
+
+3.Configure above processors with HDFS Read & Write Path
+
 4.******** Dont forget to add Hadoop config**********--------->core-site.xml
 
  ![GetHDFStoPutHDFS_Nifi](https://github.com/IlayaBharathi260199/IlayaBharathi260199/assets/151670523/63ba74b3-fb6c-4adf-b4ed-e657940fc901)
