@@ -1,6 +1,5 @@
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.sql._
-import org.apache.spark._
 import org.apache.spark.sql.functions._
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
@@ -57,6 +56,7 @@ object KafkaStreamingtoDF {
 
     streamValue.print()
 
+   // foreach RDD used to modify or transform the data
      streamValue.foreachRDD(x =>
      if (! x.isEmpty() )
        {
