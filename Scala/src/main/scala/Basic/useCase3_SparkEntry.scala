@@ -3,10 +3,16 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 
+
+
 /*
+
+RDD
+===
+
 INPUT
 =====
- val mylist = ()
+ val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/Scala/files/statecity.csv")
 
 Expected OUTPUT should be
 =========================
@@ -30,7 +36,7 @@ object useCase3_SparkEntry {
     val sc =new SparkContext(Conf)
     sc.setLogLevel("ERROR")
 
-    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/Scala/files/csv.csv")
+    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/Scala/files/statecity.csv")
     val flatm = file.flatMap(x => x.split("~"))
     val state = flatm.filter(x => x.contains("State"))
     val city = flatm.filter(x => x.contains("City"))
