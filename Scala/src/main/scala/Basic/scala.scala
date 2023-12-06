@@ -41,7 +41,7 @@ object scala {
     // want only data contains "ilaya"
     val mylistcont = myStringlist.filter(x => x.contains("ilaya"))
     println(mylistcont)
-
+    mylistcont.foreach(println)
 
   }
 }
