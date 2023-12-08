@@ -15,7 +15,7 @@ object useCase4_SchemaRDD {
   def main(args: Array[String]): Unit = {
 
     val Conf = new SparkConf()
-      .setAppName("test") // Spark Application Name
+      .setAppName("SchemaRDD") // Spark Application Name
       .setMaster("local[*]") // deploy mode local, using all cores for parallel processing,
 
     val sc = new SparkContext(Conf)
