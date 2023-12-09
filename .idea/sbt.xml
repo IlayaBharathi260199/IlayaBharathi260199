@@ -34,6 +34,16 @@
         </option>
         <option name="sbtVersion" value="1.9.7" />
       </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SparkDSL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SparkDSL" />
+            <option value="$PROJECT_DIR$/SparkDSL/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
     </option>
   </component>
 </project>

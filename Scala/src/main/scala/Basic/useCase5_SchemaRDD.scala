@@ -16,7 +16,7 @@ object useCase5_SchemaRDD {
      val spark = SparkSession.builder.getOrCreate()
     import spark.implicits._
 
-    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/Scala/files/airports.text")
+    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/airports.text")
     //file.take(5).foreach(println)
 
     val len=file.filter(x=>x.length()>50)

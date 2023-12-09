@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="KafkaSteaming,Scala,ilaya,ilaya_8213,kafkasteaming_1699" />
+    <profile name="sbt 1" modules="KafkaSteaming,Scala,SparkDSL,ilaya,ilaya_8213,kafkasteaming_1699" />
   </component>
 </project>

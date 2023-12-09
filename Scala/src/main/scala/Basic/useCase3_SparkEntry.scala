@@ -36,7 +36,7 @@ object useCase3_SparkEntry {
     val sc =new SparkContext(Conf)
     sc.setLogLevel("ERROR")
 
-    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/Scala/files/statecity.csv")
+    val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/statecity.csv")
     val flatm = file.flatMap(x => x.split("~"))
     val state = flatm.filter(x => x.contains("State"))
     val city = flatm.filter(x => x.contains("City"))

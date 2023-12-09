@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Scala.iml" filepath="$PROJECT_DIR$/.idea/modules/Scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scala/.idea/modules/Scala-build.iml" filepath="$PROJECT_DIR$/Scala/.idea/modules/Scala-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkDSL.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkDSL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SparkDSL/.idea/modules/SparkDSL-build.iml" filepath="$PROJECT_DIR$/SparkDSL/.idea/modules/SparkDSL-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ilaya.iml" filepath="$PROJECT_DIR$/.idea/modules/ilaya.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ilaya-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ilaya-build.iml" />
     </modules>
