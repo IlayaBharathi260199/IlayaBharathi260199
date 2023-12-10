@@ -40,12 +40,17 @@ object SparkDSL {
     csv.filter(col("category") isin("Exercise", "Gymnastics")).show(false)
     csv.filter(!(col("category") isin("Exercise", "Gymnastics"))).show(false)
 
+    println
+    println("===nULL===")
+    csv.filter(col("product").isNull ).show(false)
+    csv.filter(col("product").isNotNull).show(false)
+
     //like and notlike
     csv.filter(col("product") like "%Gymnastics%").show(false)
     csv.filter(!(col("product") like "%Gymnastics%")).show(false)
 
     //contains
-    csv.filter(col("product") contains ("Gymnastics")).show(false)
+    csv.filter(col("product") contains "Gymnastics").show(false)
 
   }
 }

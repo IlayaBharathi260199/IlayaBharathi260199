@@ -44,6 +44,16 @@
         </option>
         <option name="sbtVersion" value="1.9.7" />
       </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spark_AWS_S3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spark_AWS_S3" />
+            <option value="$PROJECT_DIR$/Spark_AWS_S3/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
     </option>
   </component>
 </project>
