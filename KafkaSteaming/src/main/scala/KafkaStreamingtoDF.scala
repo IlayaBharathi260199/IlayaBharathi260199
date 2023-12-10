@@ -17,7 +17,7 @@ object KafkaStreamingtoDF {
     val sparkConf = new SparkConf()
       .setAppName("Streaming")
       .setMaster("local[2]")
-      .set("spark.driver.allowMultipleContexts","true") // Allowing multiple contexts
+      .set("spark.driver.allowMultipleContexts", "true") // Allowing multiple contexts
 
     // Create a SparkContext using the SparkConf
     val sc = new SparkContext(sparkConf)
@@ -26,12 +26,12 @@ object KafkaStreamingtoDF {
     Logger.getRootLogger.setLevel(Level.DEBUG)
 
     // Create a SparkSession
-     val spark = SparkSession
-       .builder()
+    val spark = SparkSession
+      .builder()
       .getOrCreate()
     import spark.implicits._
     // Set log level to avoid unnecessary logs
-      spark.sparkContext.setLogLevel("ERROR")
+    spark.sparkContext.setLogLevel("ERROR")
 
     val streamingContext = new StreamingContext(sparkConf, Seconds(3))
 
@@ -44,7 +44,7 @@ object KafkaStreamingtoDF {
       "enable.auto.commit" -> (false: java.lang.Boolean)
     )
 
-    val topics = Array("ilaya")                                                   // topic name
+    val topics = Array("ilaya") // topic name
 
     val stream = KafkaUtils.createDirectStream[String, String](
       streamingContext,
@@ -52,20 +52,19 @@ object KafkaStreamingtoDF {
       Subscribe[String, String](topics, kafkaParams)
     )
 
-    val streamValue=stream.map(x => x.value())
+    val streamValue = stream.map(x => x.value())
 
     streamValue.print()
 
-   // foreach RDD used to modify or transform the data
-     streamValue.foreachRDD(x =>
-     if (! x.isEmpty() )
-       {
-         val df=x.toDF("id").withColumn("time",current_timestamp())
-         df.show()
+    // foreach RDD used to modify or transform the data
+    streamValue.foreachRDD(x =>
+      if (!x.isEmpty()) {
+        val df = x.toDF("id").withColumn("time", current_timestamp())
+        df.show()
 
-       }
+      }
 
-     )
+    )
 
     streamingContext.start()
     streamingContext.awaitTermination()

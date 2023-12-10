@@ -1,4 +1,5 @@
 package Basic
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
@@ -33,7 +34,7 @@ object useCase3_SparkEntry {
       .setAppName("test") // Spark Application Name
       .setMaster("local[*]") // deploy mode local, using all cores for parallel processing,
 
-    val sc =new SparkContext(Conf)
+    val sc = new SparkContext(Conf)
     sc.setLogLevel("ERROR")
 
     val file = sc.textFile("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/statecity.csv")

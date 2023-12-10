@@ -1,6 +1,6 @@
 version := "1.0"
 
-scalaVersion := "2.12.10"  // Adjust according to your requirements
+scalaVersion := "2.12.10" // Adjust according to your requirements
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.4.8",

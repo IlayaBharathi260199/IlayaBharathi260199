@@ -16,7 +16,7 @@ object scala {
 
 
     // how to add 20 to each elements in "mylist" ?
-    val mylist = List(1,2,3,4)
+    val mylist = List(1, 2, 3, 4)
     println
     println(mylist)
 
@@ -27,7 +27,7 @@ object scala {
     println(modlist)
 
     //String concat
-    val myStringlist = List("ilayabha","bharathi","ilaya")
+    val myStringlist = List("ilayabha", "bharathi", "ilaya")
     val modlist1 = myStringlist.map(x => x + " you are good")
     println(myStringlist)
     println
@@ -35,7 +35,7 @@ object scala {
     println
 
     //Replace with LAMBDA(=>)
-    val mylistReplace = myStringlist.map(x => x.replace("ilaya","bharathi"))
+    val mylistReplace = myStringlist.map(x => x.replace("ilaya", "bharathi"))
     println(mylistReplace)
 
     // want only data contains "ilaya"

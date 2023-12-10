@@ -15,7 +15,7 @@ object KafkaStreaming {
     val sparkConf = new SparkConf()
       .setAppName("Streaming")
       .setMaster("local[*]")
-      .set("spark.driver.allowMultipleContexts", "true")                                  // Allowing multiple contexts
+      .set("spark.driver.allowMultipleContexts", "true") // Allowing multiple contexts
 
     // Create a SparkContext using the SparkConf
     val sc = new SparkContext(sparkConf)

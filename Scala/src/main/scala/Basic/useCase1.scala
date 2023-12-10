@@ -1,4 +1,5 @@
 package Basic
+
 /*
 INPUT
 =====
@@ -18,9 +19,9 @@ object useCase1 {
   def main(args: Array[String]): Unit = {
 
     // input
-    val mylist = List("Bigdata-Spark-Hive","Spark-Hadoop-Hive","Sqoop-Hive-Spark","Sqoop-BD-Hive")
-    val flatlist= mylist.flatMap(x=>x.split("-")).distinct
-    val concatlist=flatlist.map( x=> "Tech-->" + x + " Trainer ->Ilaya")
+    val mylist = List("Bigdata-Spark-Hive", "Spark-Hadoop-Hive", "Sqoop-Hive-Spark", "Sqoop-BD-Hive")
+    val flatlist = mylist.flatMap(x => x.split("-")).distinct
+    val concatlist = flatlist.map(x => "Tech-->" + x + " Trainer ->Ilaya")
     concatlist.foreach(println)
 
   }
