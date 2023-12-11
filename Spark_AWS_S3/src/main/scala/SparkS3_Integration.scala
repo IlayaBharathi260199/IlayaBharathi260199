@@ -8,8 +8,8 @@ object SparkS3_Integration {
     // Create a SparkSession
     val spark = SparkSession.builder
       .appName("S3_Integration")
-      .config("fs.s3a.access.key", "AKIAVBE2M5VFZ7NJKX2I")
-      .config("fs.s3a.secret.key", "kTW182xmLr61aeQrEsXfwinp93SjwEXKSAvVxU72")
+      .config("fs.s3a.access.key", "Your Key")
+      .config("fs.s3a.secret.key", "Your Key")
       .master("local[*]") // Use "local[*]" to run locally using all available cores
       .getOrCreate()
 

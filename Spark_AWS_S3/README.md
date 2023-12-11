@@ -17,9 +17,9 @@ To integrate Spark(Remote) with Amazon AWS S3 we need to focus on 3 things
 
   2.AccessKey
   ===========
-  AKIAVBE2M5VFZ7NJKX2I
+  
   
   3.SecretKey
   ===========
-  kTW182xmLr61aeQrEsXfwinp93SjwEXKSAvVxU72
+  
  
