@@ -8,28 +8,26 @@ object SparkS3_Integration {
     // Create a SparkSession
     val spark = SparkSession.builder
       .appName("S3_Integration")
+      .config("fs.s3a.access.key", "AKIAVBE2M5VFZ7NJKX2I")
+      .config("fs.s3a.secret.key", "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")
       .master("local[*]") // Use "local[*]" to run locally using all available cores
       .getOrCreate()
 
     // Set log level to avoid unnecessary logs
     spark.sparkContext.setLogLevel("ERROR")
 
-    val csv = spark.read.format("csv").option("header", "true")
-      .option("fs.s3a.access.key", "AKIAVBE2M5VFZ7NJKX2I")
-      .option("fs.s3a.secret.key", "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")
-      .load("s3a://ilaya2/dt.csv")
 
-    val csv1 = spark.read.format("csv").option("header", "true")
-      .option("fs.s3a.access.key", "AKIAVBE2M5VFZ7NJKX2I")
-      .option("fs.s3a.secret.key", "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")
-      .load("s3a://ilaya2/df1.csv")
+    //1.Reading from AWS S3
+    val csv = spark.read.format("csv").option("header", "true").load("s3a://ilaya2/dt.csv")
+    val csv1 = spark.read.format("csv").option("header", "true").load("s3a://ilaya2/df1.csv")
+    csv1.show()
+    csv.show()
+
+    //2.===========Transformations===========
 
 
-    csv.show(false)
-    csv1.show(false)
-
-    csv1.select(" product").show(false)
-
+    //3.Writing to AWS S3 as Parq
+     csv.write.mode("overwrite").parquet("s3a://ilaya2/df1.parq")
 
   }
 }
