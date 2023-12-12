@@ -5,7 +5,7 @@ import org.apache.spark.sql.functions._
 //import org.apache.spark.sql.functions.col
 
 
-object SparkDSL {
+object Filter {
 
   def main(args: Array[String]): Unit = {
     // Create a SparkSession
