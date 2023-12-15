@@ -1,0 +1,9 @@
+{
+	"id": 1,
+	"institute": "zeyobron",
+	"location": {
+		"permanentLocation": "hyderabad",
+		"temporaryLocation": "chennai"
+	},
+	"worklocation": "pune"
+}

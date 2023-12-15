@@ -1,0 +1,23 @@
+{
+	"first_name": "Rajeev",
+	"last_name": "Sharma",
+	"email_address": "rajeev@ezeelive.com",
+	"is_alive": true,
+	"age": 30,
+	"height_cm": 185.2,
+	"address": {
+		"billing_address": {
+			"address": "502, Main Market, Evershine City, Evershine, Vasai East",
+			"city": "Vasai Raod, Palghar",
+			"state": "Maharashtra",
+			"postal_code": "401208"
+		},
+		"shipping_address": {
+			"address": "Ezeelive Technologies, A-4, Stattion Road, Oripada, Dahisar East",
+			"city": "Mumbai",
+			"state": "Maharashtra",
+			"postal_code": "400058"
+		}
+	},
+	"date_of_birth": null
+}

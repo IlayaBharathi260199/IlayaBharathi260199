@@ -43,5 +43,12 @@ object scala {
     println(mylistcont)
     mylistcont.foreach(println)
 
+
+     println()
+    println("=======is========")
+
+    val newlist =mylist.map(x=> x + "is" + myStringlist)
+    newlist.foreach(println)
+
   }
 }
