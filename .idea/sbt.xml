@@ -35,6 +35,16 @@
         <option name="sbtVersion" value="1.9.7" />
       </SbtProjectSettings>
       <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Pipelines" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Pipelines" />
+            <option value="$PROJECT_DIR$/Pipelines/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Scala" />
         <option name="modules">
           <set>
