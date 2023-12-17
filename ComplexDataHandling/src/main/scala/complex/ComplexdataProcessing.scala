@@ -10,14 +10,14 @@ object ComplexdataProcessing {
   def main(args: Array[String]): Unit = {
     // Create a SparkSession
     val spark = SparkSession.builder
-      .appName("Aggregation")
+      .appName("ComplexData")
       .master("local[*]") // Use "local[*]" to run locally using all available cores
       .getOrCreate()
 
     // Set log level to avoid unnecessary logs
     spark.sparkContext.setLogLevel("ERROR")
 
-    val dt = spark.read.option("multiline", "true").json("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/actors.json")
+    val dt = spark.read.option("multiline", "true").json("C:\\Users\\ILAYA BHARATHI M\\Desktop\\231217\\IlayaBharathi260199\\Scala\\files\\actors.json")
     println("===Raw Schema===")
     dt.printSchema()
 

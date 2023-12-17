@@ -9,5 +9,5 @@ If anywhere we see "Array" as a datatype in our Schema, we can use "explode()" t
 
 struct
 ======
-If anywhere we see "Array" as a datatype in our Schema, we can use "."(Dot) to flatten struct.
+If anywhere we see "Struct" as a datatype in our Schema, we can use "."(Dot) to flatten struct.
 If you wanna select all fields from one struct we can use .*

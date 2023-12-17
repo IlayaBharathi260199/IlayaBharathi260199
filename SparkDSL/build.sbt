@@ -5,17 +5,7 @@ scalaVersion := "2.12.10" // Adjust according to your requirements
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "3.1.2",
   "org.apache.spark" %% "spark-sql" % "3.1.2",
-  "org.apache.hadoop" % "hadoop-aws" % "2.6.0",
-  "com.amazonaws" % "amazon-kinesis-client" % "1.13.3",
-  "com.amazonaws" % "aws-java-sdk-core" % "1.11.820",
-  "com.amazonaws" % "aws-java-sdk" % "1.11.811",
-  "com.amazonaws" % "aws-java-sdk-s3" % "1.11.828",
-  "com.amazonaws" % "aws-java-sdk-s3" % "1.11.886",
-  "com.amazonaws" % "aws-java-sdk-dynamodb" % "1.11.797",
-  "com.amazonaws" % "aws-java-sdk-cloudwatch" % "1.11.821",
-  "com.amazonaws" % "aws-java-sdk-kinesis" % "1.11.744",
-  "com.fasterxml.jackson.core" % "jackson-core" % "2.11.1",
-  "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % "2.6.7",
+
 )
 
 lazy val root = (project in file("."))
