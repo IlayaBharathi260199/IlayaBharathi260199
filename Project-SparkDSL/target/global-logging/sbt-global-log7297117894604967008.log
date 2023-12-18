@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(show discoveredMainClasses, Some(c7245e66-2200-47ae-9429-361d12c8bd4f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / discoveredMainClasses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.Aggregation[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.Filter[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.Joins[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.SelectExpr[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.WithColumn[0m
+[0m[[0m[0minfo[0m] [0m[0m* dsl.complex[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 18 Dec, 2023 12:11:02 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

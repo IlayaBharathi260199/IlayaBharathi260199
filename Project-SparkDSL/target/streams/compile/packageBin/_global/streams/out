@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/sparkdsl_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Aggregation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Aggregation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Joins.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Joins.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/complex.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/complex.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/SelectExpr.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/SelectExpr.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Joins$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Joins$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/complex$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/complex$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/WithColumn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/WithColumn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Filter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Filter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/SelectExpr$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/SelectExpr$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/WithColumn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/WithColumn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Aggregation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Aggregation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Filter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Filter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

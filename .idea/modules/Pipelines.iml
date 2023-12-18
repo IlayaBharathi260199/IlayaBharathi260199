@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="root [file:/C:/Users/ILAYA%20BHARATHI%20M/Desktop/231217/IlayaBharathi260199/Pipelines/]" external.linked.project.path="$MODULE_DIR$/../../Pipelines" external.root.project.path="$MODULE_DIR$/../../Pipelines" external.system.id="SBT" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="root [file:/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Pipelines/]" external.linked.project.path="$MODULE_DIR$/../../Pipelines" external.root.project.path="$MODULE_DIR$/../../Pipelines" external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../Pipelines/target/scala-2.12/classes" />
-    <output-test url="file://$MODULE_DIR$/../../Pipelines/target/scala-2.12/test-classes" />
+    <output url="file://$MODULE_DIR$/../../Project-Pipelines/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../Project-Pipelines/target/scala-2.12/test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../Pipelines">
-      <sourceFolder url="file://$MODULE_DIR$/../../Pipelines/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../Pipelines/src/test/scala" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Pipelines/target" />
+    <content url="file://$MODULE_DIR$/../../Project-Pipelines">
+      <sourceFolder url="file://$MODULE_DIR$/../../Project-Pipelines/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Project-Pipelines/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Project-Pipelines/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-2.12.10" level="project" />
     <orderEntry type="library" name="sbt: aopalliance:aopalliance:1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.9.6:jar" level="project" />
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
@@ -193,9 +194,11 @@
         <CLASSES />
         <JAVADOC>
           <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
           <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
