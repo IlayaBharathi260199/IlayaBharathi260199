@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" />

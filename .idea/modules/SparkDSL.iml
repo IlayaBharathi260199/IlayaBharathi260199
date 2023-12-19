@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="root [file:/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/]" external.linked.project.path="$MODULE_DIR$/../../SparkDSL" external.root.project.path="$MODULE_DIR$/../../SparkDSL" external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../Project-SparkDSL/target/scala-2.12/classes" />
-    <output-test url="file://$MODULE_DIR$/../../Project-SparkDSL/target/scala-2.12/test-classes" />
+    <output url="file://$MODULE_DIR$/../../SparkDSL/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../SparkDSL/target/scala-2.12/test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../Project-SparkDSL">
-      <sourceFolder url="file://$MODULE_DIR$/../../Project-SparkDSL/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../Project-SparkDSL/src/test/scala" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Project-SparkDSL/target" />
+    <content url="file://$MODULE_DIR$/../../SparkDSL">
+      <sourceFolder url="file://$MODULE_DIR$/../../SparkDSL/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../SparkDSL/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../SparkDSL/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
