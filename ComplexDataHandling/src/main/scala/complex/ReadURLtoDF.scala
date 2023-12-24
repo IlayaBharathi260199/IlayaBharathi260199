@@ -36,5 +36,7 @@ object ReadURLtoDF {
     df.printSchema()
     df.show()
 
+    //flattening pending....?????
+
   }
 }

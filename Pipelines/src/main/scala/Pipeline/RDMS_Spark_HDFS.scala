@@ -45,7 +45,7 @@ object RDMS_Spark_HDFS {
     println(f"Number of rows in the DataFrame: " + rowcount)
 
     // Writing transformed data to HDFS
-    df.write.partitionBy("").parquet("HDFS PATH")
+    trans.write.partitionBy("").parquet("HDFS PATH")
 
 
   }

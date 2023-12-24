@@ -15,10 +15,15 @@ object Dfwrite {
     spark.sparkContext.setLogLevel("ERROR")
 
     // Reading df as csv file format
-    val df = spark.read.csv("Path")
+    val df = spark.read.option("header", "true").csv("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/dt.csv")
 
-    // Writing as Parquet format
-    df.write.parquet("DestinationPath")
+    // Reading df1 as csv file format from HDFS
+    val df1 = spark.read.option("header", "true").csv("hdfs://localhost:50000/user/ubuntu/airports.text")
+        df1.show(false)
+         df1.printSchema()
+
+    // Writing as Parquet format to HDFS
+    df1.write.parquet("hdfs://localhost:50000/user/ubuntu/Parq")
 
   }
 }

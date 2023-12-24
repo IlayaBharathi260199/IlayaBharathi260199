@@ -1,11 +1,12 @@
 package Pipeline
 
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.{col, explode}
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.io.Source // Need, to read data from URL
 
-object ReadURLtoDF {
+object WebAPI_Spark_HDFS {
 
 
   def main(args: Array[String]): Unit = {
@@ -20,7 +21,7 @@ object ReadURLtoDF {
 
     val spark = SparkSession.builder.getOrCreate()
 
-    //Reading data from URL as String ,using common template(line:26,27)
+    //Reading data from URL as String ,using common template(line:24,25)
     val htmlSource = Source.fromURL("https://randomuser.me/api/0.8/?results=20")
     val fileAsString = htmlSource.mkString
     // println(fileAsString)
@@ -32,10 +33,45 @@ object ReadURLtoDF {
 
     // Reading Above RDD as DataFrame
     val df = spark.read.json(toRDD)
+    println()
+    println("=====flattened schema=====")
     df.printSchema()
     df.show()
 
-    //flattening pending....?????
+    //======Tranformation, flattening the data======
+
+    val flatarray = df.withColumn("results", explode(col("results")))
+    flatarray.printSchema()
+
+    val flatstruct = flatarray.select(
+      "nationality",
+      "results.user.cell",
+      "results.user.dob",
+      "results.user.email",
+      "results.user.gender",
+      "results.user.md5",
+      "results.user.password",
+      "results.user.phone",
+      "results.user.registered",
+      "results.user.salt",
+      "results.user.sha1",
+      "results.user.sha256",
+      "results.user.username",
+      "results.user.location.*",
+      "results.user.name.*",
+      "results.user.picture.*",
+      "seed",
+      "version"
+    )
+    println()
+    println("=====flattened schema=====")
+    flatstruct.printSchema()
+    flatstruct.show(1, false)
+
+
+    // Writing the data to hdfs as parquet
+    flatstruct.write.mode("overwrite").parquet("hdfs://localhost:50000/user/hadoop/flatten/parquet")
+
 
   }
 }

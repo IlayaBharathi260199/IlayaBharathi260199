@@ -4,35 +4,34 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
 
-object HiveWarehouse_Spark_AWS_S3 {
+object AWS_S3_Spark_AWS_S3 {
 
   def main(args: Array[String]): Unit = {
     // Create a SparkSession
     val spark = SparkSession.builder
-      .appName("Hive_Integration")
-    //  .config("fs.s3a.access.key", "AKIAVBE2M5VFSGJHXMEP")
-    //  .config("fs.s3a.secret.key", "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")
-      .enableHiveSupport()
+      .appName("AWS_S3_Spark_AWS_S3")
+      .config("fs.s3a.access.key", "AKIAVBE2M5VFSGJHXMEP")
+      .config("fs.s3a.secret.key", "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")
       .master("local[*]") // Use "local[*]" to run locally using all available cores
       .getOrCreate()
-
-
-    spark.conf.set("spark.sql.warehouse.dir", "hdfs://localhost:50000/user/hive/warehouse")
 
     // Set log level to avoid unnecessary logs
     spark.sparkContext.setLogLevel("ERROR")
 
-    // Set up MySQL as the Hive metastore
 
-    // Read data from the Hive table
-    val hiveTableName = "hive.db.hivetable"
-    val hiveDF = spark.sql(s"SELECT * FROM $hiveTableName")
+    //1.Reading from AWS S3
+    val csv = spark.read.format("csv").option("header", "true").load("s3a://ilaya2/dt.csv")
+    csv.show()
 
-    // Show the DataFrame
-    hiveDF.show()
+
+    //2.===========Transformations===========
+    val mod = csv.filter(col("amount") > 100)
+    mod.show(false)
+
+    //3.Writing to AWS_S3 as CSV
+    mod.write.mode("overwrite").csv("s3a://ilaya2/dtcsv")
 
 
   }
-
 
 }
