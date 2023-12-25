@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ETL-Pipelines.iml" filepath="$PROJECT_DIR$/.idea/modules/ETL-Pipelines.iml" />
       <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pipelines.iml" filepath="$PROJECT_DIR$/.idea/modules/Pipelines.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pipelines/.idea/modules/Pipelines-build.iml" filepath="$PROJECT_DIR$/Pipelines/.idea/modules/Pipelines-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project-ComplexDataHandling.iml" filepath="$PROJECT_DIR$/.idea/modules/Project-ComplexDataHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Scala.iml" filepath="$PROJECT_DIR$/.idea/modules/Scala.iml" />

@@ -14,10 +14,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Joins$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	dsl/complex$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/complex$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Word_count$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Word_count$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	dsl/WithColumn.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/WithColumn.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	dsl/Filter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Filter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dsl/Word_count.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/Word_count.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	dsl/SelectExpr$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/SparkDSL/target/scala-2.12/classes/dsl/SelectExpr$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	dsl/WithColumn$.class[0m
