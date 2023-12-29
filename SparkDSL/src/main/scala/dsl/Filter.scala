@@ -46,11 +46,12 @@ object Filter {
     csv.filter(col("product").isNotNull).show(false)
 
     //like and notlike
-    csv.filter(col("product") like "%Gymnastics%").show(false)
-    csv.filter(!(col("product") like "%Gymnastics%")).show(false)
+    csv.filter(col("product").like ("%Gymnastics%")).show(false)
+    csv.filter(!col("product").like ("%Gymnastics%")).show(false)
+    csv.filter(col("product").like("%cs")).show(false)
 
     //contains
-    csv.filter(col("product") contains "Gymnastics").show(false)
+    csv.filter(col("product").contains("Gymnastics")).show(false)
 
   }
 }

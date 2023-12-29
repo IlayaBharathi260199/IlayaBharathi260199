@@ -2,7 +2,6 @@ package dsl
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
-//import org.apache.spark.sql.functions.col
 
 
 object Regex_replace {
@@ -27,5 +26,19 @@ object Regex_replace {
 
       .withColumn("aemail", regexp_replace(col("aemail"), ".com", ""))
     esplit.show(5, false)
+
+    // to remove "Numerical" values from data pattern = "\\d"(common)
+    val num = data.withColumn("Email", regexp_replace(col("Email"), "\\d", ""))
+    println()
+    println("=====Numbers Removed=====")
+    num.show(false)
+
+    // To remove Special characters from data pattern = "[^a-zA-Z ]"(common)
+    // Specify the special characters you want to remove
+    // val specialCharacters = "[,\\!@]" (cal val name in pattern without "")
+    val speChar = data.withColumn("Email", regexp_replace(col("Email"), "[^a-zA-Z ]", ""))
+    println()
+    println("=====Special characters Removed=====")
+    speChar.show(false)
   }
 }
