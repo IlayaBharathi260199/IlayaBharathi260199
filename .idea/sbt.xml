@@ -45,6 +45,16 @@
         <option name="sbtVersion" value="1.9.8" />
       </SbtProjectSettings>
       <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Project-GCP" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Project-GCP" />
+            <option value="$PROJECT_DIR$/Project-GCP/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Scala" />
         <option name="modules">
           <set>

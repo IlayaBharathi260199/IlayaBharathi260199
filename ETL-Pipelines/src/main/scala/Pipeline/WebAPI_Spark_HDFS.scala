@@ -70,7 +70,7 @@ object WebAPI_Spark_HDFS {
 
 
     // Writing the data to hdfs as parquet
-    flatstruct.write.mode("overwrite").parquet("hdfs://localhost:50000/user/hadoop/flatten/parquet")
+   // flatstruct.write.mode("overwrite").parquet("hdfs://localhost:50000/user/hadoop/flatten/parquet")
 
 
   }
