@@ -8,16 +8,16 @@ def start_dataproc_cluster(data, context):
     file_path = file_name.split('/')
     
     # Check if the file is in the desired folder
-    if len(file_path) > 1 and file_path[0] == 'trigger':
+    if len(file_path) > 1 and file_path[0] == 'trigger':  #Trigger folder
         # Log the file upload info
-        bucket_name = "ilaya"
+        bucket_name = "ilaya"                          #Bucket Name
         logging.info(f"New file uploaded: {file_name} in bucket: {bucket_name}")
         
         # Define your Dataproc cluster parameters
-        project_id = "circular-gist-407717"
+        project_id = "circular-gist-407717"     # Get project id from service_account
         region = "asia-south2"
         cluster_name = "ilaya-cluster"
-        service_account = "circular-gist-407717@appspot.gserviceaccount.com"
+        service_account = "circular-gist-407717@appspot.gserviceaccount.com"  #Service Account should yours [Details-->General information]
         
         # Start the Dataproc cluster
         create_dataproc_cluster(project_id, region, cluster_name, service_account)
@@ -78,8 +78,8 @@ def submit_spark_job(project_id, region, cluster_name):
     dataproc_client = dataproc.JobControllerClient(client_options={"api_endpoint": f"{region}-dataproc.googleapis.com:443"})
     
     # Specify Spark job details
-    spark_jar_uri = "gs://ilaya/Jars/project-gcp_2.12-1.0.jar"
-    spark_main_class = "GCP.ProjectGCP"
+    spark_jar_uri = "gs://ilaya/Jars/project-gcp_2.12-1.0.jar" # Your Project Jar
+    spark_main_class = "GCP.ProjectGCP"                        # Your Package.Class
     spark_args = []
     
     job = {
@@ -93,3 +93,5 @@ def submit_spark_job(project_id, region, cluster_name):
     
     operation = dataproc_client.submit_job(project_id=project_id, region=region, job=job)
     logging.info("Submitted Spark job to Dataproc cluster.")
+
+   #Add dependency in requirement.txt(Must)
