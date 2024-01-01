@@ -1,0 +1,6 @@
+# Function dependencies, for example:
+# package>=version
+google-cloud-dataproc==3.0.0
+google-cloud-storage==1.42.2
+
+

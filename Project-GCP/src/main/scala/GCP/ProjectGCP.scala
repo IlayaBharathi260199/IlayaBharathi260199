@@ -29,7 +29,7 @@ object ProjectGCP {
 
     val product = spark.read.option("inferschema", "true")
       .parquet("gs://ilaya/product")
-   // product.show()
+    // product.show()
 
     //    product.write.mode("Overwrite")
     //      .parquet("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/Parquet/product")
@@ -37,7 +37,7 @@ object ProjectGCP {
     val france_sales = spark.read.option("inferschema", "true")
       .parquet("gs://ilaya/france_sales")
       .withColumn("country", lit("FR"))
-   // france_sales.show()
+    // france_sales.show()
 
     //    france_sales.write.mode("Overwrite")
     //      .parquet("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/Parquet/france_sales")
@@ -46,7 +46,7 @@ object ProjectGCP {
     val usa_sales = spark.read.option("inferschema", "true")
       .parquet("gs://ilaya/usa_sales")
       .withColumn("country", lit("US"))
-  //  usa_sales.show()
+    //  usa_sales.show()
 
     //    usa_sales.write.mode("Overwrite")
     //      .parquet("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/Parquet/usa_sales")
@@ -58,20 +58,20 @@ object ProjectGCP {
     fr_uni_us.show()
 
     val joinWithUni = customer.join(fr_uni_us, customer("customer_key") === fr_uni_us("customer"), "left").drop("customer")
-//    println()
-//    println("======Join with Union======")
-//    joinWithUni.show(false)
+    //    println()
+    //    println("======Join with Union======")
+    //    joinWithUni.show(false)
 
 
-//    println()
-//    println("======Final_Joined======")
+    //    println()
+    //    println("======Final_Joined======")
     val Final = joinWithUni.join(product, joinWithUni("product") === product("product_key"), "left").drop("product")
-   // Final.show(false)
+    // Final.show(false)
 
-        Final.write.partitionBy("country").mode("Overwrite")
-          .parquet("gs://ilaya/GCP_Project/final_Customer")
+    Final.write.partitionBy("country").mode("Overwrite")
+      .parquet("gs://ilaya/GCP_Project/final_Customer")
 
-   // println("Total Number of colums: " + Final.columns.length)
+    // println("Total Number of colums: " + Final.columns.length)
 
 
   }
