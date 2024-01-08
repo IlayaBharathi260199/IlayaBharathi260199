@@ -75,6 +75,16 @@
         <option name="sbtVersion" value="1.9.7" />
       </SbtProjectSettings>
       <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SparkSQL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SparkSQL" />
+            <option value="$PROJECT_DIR$/SparkSQL/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Spark_AWS_S3" />
         <option name="modules">
           <set>

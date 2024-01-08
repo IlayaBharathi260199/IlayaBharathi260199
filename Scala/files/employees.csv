@@ -1,4 +1,4 @@
-First Name,Last Name,Email,Phone,Gender,Age,Job Title,Years Of Experience,Salary,Department
+First_Name,Last_Name,Email,Phone,Gender,Age,Job Title,Years_Of_Experience,Salary,Department
 Jose,Lopez,joselopez0944@slingacademy.com,+1-971-533-4552x1542,male,25,Project Manager,1,8500,Product
 Diane,Carter,dianecarter1228@slingacademy.com,881.633.0107,female,26,Machine Learning Engineer,2,7000,Product
 Shawn,Foster,shawnfoster2695@slingacademy.com,001-966-861-0065x493,male,37,Project Manager,14,17000,Product

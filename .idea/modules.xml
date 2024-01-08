@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" filepath="$PROJECT_DIR$/ComplexDataHandling/.idea/modules/ComplexDataHandling-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ETL-Pipelines.iml" filepath="$PROJECT_DIR$/.idea/modules/ETL-Pipelines.iml" />
-      <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming.iml" />
-      <module fileurl="file://$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" filepath="$PROJECT_DIR$/KafkaSteaming/.idea/modules/KafkaSteaming-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pipelines/.idea/modules/Pipelines-build.iml" filepath="$PROJECT_DIR$/Pipelines/.idea/modules/Pipelines-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project-ComplexDataHandling.iml" filepath="$PROJECT_DIR$/.idea/modules/Project-ComplexDataHandling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project-GCP.iml" filepath="$PROJECT_DIR$/.idea/modules/Project-GCP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Project-GCP/.idea/modules/Project-GCP-build.iml" filepath="$PROJECT_DIR$/Project-GCP/.idea/modules/Project-GCP-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Scala.iml" filepath="$PROJECT_DIR$/.idea/modules/Scala.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Scala/.idea/modules/Scala-build.iml" filepath="$PROJECT_DIR$/Scala/.idea/modules/Scala-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkDSL.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkDSL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SparkDSL/.idea/modules/SparkDSL-build.iml" filepath="$PROJECT_DIR$/SparkDSL/.idea/modules/SparkDSL-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spark_AWS_S3.iml" filepath="$PROJECT_DIR$/.idea/modules/Spark_AWS_S3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spark_AWS_S3/.idea/modules/Spark_AWS_S3-build.iml" filepath="$PROJECT_DIR$/Spark_AWS_S3/.idea/modules/Spark_AWS_S3-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ilaya.iml" filepath="$PROJECT_DIR$/.idea/modules/ilaya.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ilaya-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ilaya-build.iml" />
     </modules>
   </component>
 </project>

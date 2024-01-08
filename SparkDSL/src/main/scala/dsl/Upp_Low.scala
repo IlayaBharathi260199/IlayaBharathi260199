@@ -21,9 +21,9 @@ object Upp_Low {
     data.printSchema()
     //data.show(2,false)
 
-    data.withColumn("Last Name", upper(col("Last Name")))
-      .withColumn("First Name", lower(col("First Name")))
-      .select("First Name", "Last Name").show(false)
+    data.withColumn("Last_Name", upper(col("Last_Name")))
+      .withColumn("First_Name", lower(col("First_Name")))
+      .select("First_Name", "Last_Name").show(false)
 
     // distinct
     data.select("Department").distinct().show(false)
